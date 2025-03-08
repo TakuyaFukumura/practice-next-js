@@ -8,6 +8,9 @@ export default function Home() {
       <p>
         <Link href="/about">Go to About Page</Link> {/* Aboutページへのリンク */}
       </p>
+      <p>
+        <Link href="/contact">Go to Contact Page</Link>
+      </p>
     </div>
   );
 }
