@@ -8,9 +8,9 @@ export default function Call() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("/api/hello"); // APIエンドポイント
-        if (!res.ok) throw new Error("Failed to fetch data");
-        const data = await res.json();
+        const apiResponse = await fetch("/api/hello"); // APIエンドポイント
+        if (!apiResponse.ok) throw new Error("Failed to fetch data");
+        const data = await apiResponse.json();
         setMessage(data.message);
       } catch (error) {
         console.error(error);
