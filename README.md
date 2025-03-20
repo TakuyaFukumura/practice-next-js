@@ -6,6 +6,8 @@
 
 ```bash
 npm run dev
+```
+```bash
 # または
 yarn dev
 # または
