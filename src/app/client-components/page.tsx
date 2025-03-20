@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
+//ユーザー操作後のデータ更新に使うイメージ
 export default function Call() {
   const [message, setMessage] = useState("");
 
