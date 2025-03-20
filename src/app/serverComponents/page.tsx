@@ -1,9 +1,9 @@
 export default async function Call() {
   // APIを呼び出し（初回表示に使うイメージ）
-  const res = await fetch("http://localhost:3000/api/hello", {
+  const apiResponse = await fetch("http://localhost:3000/api/hello", {
     cache: "no-store", // キャッシュを無効化して毎回最新データを取得
   });
-  const data = await res.json();
+  const data = await apiResponse.json();
 
   return (
     <main>
